@@ -16,7 +16,14 @@ const searchArea = (props) => {
                         <div className="col-md-9">
                             <input onChange={props.handleSearch} name="search" list="book" className="form-control" placeholder="Title (required)" id="book" type="text" />
                         </div>
-                        <div className="col-md-3">                                                 <button className="btn btn-light btn-sm form-control" type="submit"><>Search</></button>
+                        <div className="col-md-3">                                                 <button className="btn btn-light form-control" type="submit"><>Search</></button>
+
+                            <select defaultValue="Sort" onChange={props.handleSort}>
+                                <option disabled value="Sort">Sort</option>
+                                <option value="Newest">Newest</option>
+                                <option value="Oldest">Oldest</option>
+                            </select>
+
                         </div>
                     </div>
                 </form>

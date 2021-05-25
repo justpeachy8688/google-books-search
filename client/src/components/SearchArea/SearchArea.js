@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../App.css";
+
 import "./style.css";
 
 const searchArea = (props) => {
@@ -7,7 +7,7 @@ const searchArea = (props) => {
         <div className="search-area card mt-4">
             <div className="card-header">
                 <h3>
-                    <strong>Search</strong>
+                    Search
                 </h3>
             </div>
             <div className="card-body">
@@ -16,7 +16,7 @@ const searchArea = (props) => {
                         <div className="col-md-9">
                             <input onChange={props.handleSearch} name="search" list="book" className="form-control" placeholder="Title (required)" id="book" type="text" />
                         </div>
-                        <div className="col-md-3">                                                 <button className="btn btn-light btn-sm form-control" type="submit"><b>Search</b></button>
+                        <div className="col-md-3">                                                 <button className="btn btn-light btn-sm form-control" type="submit"><>Search</></button>
                         </div>
                     </div>
                 </form>

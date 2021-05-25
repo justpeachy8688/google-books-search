@@ -6,6 +6,7 @@ const BookList = (props) => {
         <div className="list">
             {
                 props.books.map((book, i) => {
+                    console.log(book.volumeInfo.previewLink)
                     return <BookCard
                         key={i}
                         image={book.volumeInfo.imageLinks.thumbnail}

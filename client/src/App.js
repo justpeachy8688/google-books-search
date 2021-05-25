@@ -1,14 +1,19 @@
 import React, { Component } from "react";
-import Header from "./components/Header/Header";
-import Books from "./components/Books/Books";
 import "./App.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Search from "./pages/Search";
+import Saved from "./pages/Saved";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Books/>
+    <Router>
+    <div>
+      <Switch>
+        <Route exact path="/" component={Search} />
+        <Route exact path="/saved" component={Saved} />
+      </Switch>
     </div>
+  </Router>
   )
 }
 

@@ -7,14 +7,12 @@ import Header from "../components/Header/Header";
 import "../App.css";
 
 class Books extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            books: [],
-            searchField: '',
-            sort: ''
-        }
+    state = {
+        books: [],
+        searchField: '',
+        sort: ''
     }
+
 
     searchBook = (e) => {
         e.preventDefault();

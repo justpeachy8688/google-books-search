@@ -4,7 +4,7 @@ import "./style.css";
 const BookCard = (props) => {
 
     return (
-        <div className="card-container">
+        <div className="card-container" key={props.id}>
             <div className="card mt-4">
                 <div className="card-header"><h2>{props.title}</h2></div>
                 <div className="card-body">

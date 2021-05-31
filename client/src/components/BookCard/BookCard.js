@@ -13,7 +13,15 @@ const BookCard = (props) => {
                         <h3>Author: {props.author}</h3>
                         <h4> Description: {props.description}</h4>
                         <h5>Year Published: {props.published === '0000' ? 'Not available' : props.published.substring(0, 4)}</h5>
-                        <a href={props.link}>Preview here:</a>
+                        <button className="btn-light" href={props.link}>Preview here:</button>
+
+                        <button className="btn btn-light"
+                            onClick={() => this.saveBook()}
+                        >
+                            Save
+                            </button>
+
+
                     </div>
                 </div>
             </div>

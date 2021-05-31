@@ -4,6 +4,7 @@ import SearchArea from "../components/SearchArea/SearchArea";
 import request from "superagent";
 import BookList from "../components/BookList/BookList";
 import Header from "../components/Header/Header";
+import Nav from "../components/Nav/Navbar";
 import "../App.css";
 
 class Books extends Component {
@@ -64,6 +65,7 @@ class Books extends Component {
         })
         return (
             <div className="container">
+                <Nav />
                 <Header />
                 <SearchArea searchBook={this.searchBook} handleSearch={this.handleSearch}
                     handleSort={this.handleSort}
